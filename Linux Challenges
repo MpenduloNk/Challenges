@@ -1,0 +1,77 @@
+Task 1: Basic Task (Answears)
+
+    1. I see Directories and files so it  means that 'ls' list all the Directories.
+    2. /home/rectruit this is what i see so basically it shows your current path.
+    3. recruit@admin1-ThinkCentre-M72e:~$ mkdir workspace 
+       recruit@admin1-ThinkCentre-M72e:~$ cd workspace
+    4. I see nothing, this is an indication that the workspace Directory is empty.
+    5. recruit@admin1-ThinkCentre-M72e:~/workspace$ touch README.md
+    6. recruit@admin1-ThinkCentre-M72e:~/workspace$ cp -rf README.md CHANGELOG.md
+
+Task 2: Absolute and Relative (Answears)
+
+    1. recruit@admin1-ThinkCentre-M72e:~$ touch exercise.md
+    2. recruit@admin1-ThinkCentre-M72e:~$ mv exercise.md /tmp
+       recruit@admin1-ThinkCentre-M72e:~$ cd /
+       recruit@admin1-ThinkCentre-M72e:/$ cd ../tmp
+       recruit@admin1-ThinkCentre-M72e:/tmp$ ls
+       exercise.md
+
+
+    3. recruit@admin1-ThinkCentre-M72e:~$ cd /
+       recruit@admin1-ThinkCentre-M72e:/$ cd /var/tmp
+       recruit@admin1-ThinkCentre-M72e:/var/tmp$ rm -rf exercise.md
+
+
+Tast 3: cat commands (Answears)
+
+    1. recruit@admin1-ThinkCentre-M72e:~$ touch umuzi.md, recruits.md, cohort.md
+    2. recruit@admin1-ThinkCentre-M72e:~$ tee umuzi.md
+       Hello everyone, i just wanna its been a great experience since my day one here at umuzi.
+
+       recruit@admin1-ThinkCentre-M72e:~$ tee recruits.md
+       i dint know what to say yazin!!!!!!!!!!!!!!!!
+
+       recruit@admin1-ThinkCentre-M72e:~$ tee cohort
+       What can i say to the cohorts mara. owk Sanibonani.
+
+    3. recruit@admin1-ThinkCentre-M72e:~$ cat umuzi.md recruit.md cohort.md
+
+    4. recruit@admin1-ThinkCentre-M72e:~$ cat umuzi.md recruit.md cohort.md > summary.md
+    5. recruit@admin1-ThinkCentre-M72e:~$ echo 'The End' >> summary.md
+
+Task 4 : The locate command (Answears)
+
+    1. recruit@admin1-ThinkCentre-M72e:~$ locate -b '\umuzi.md'
+       /home/recruit/umuzi.md
+
+    2. recruit@admin1-ThinkCentre-M72e:~$ locate -b '\umuzi.md' >> search_result.md
+       recruit@admin1-ThinkCentre-M72e:~$ cat search_result.md
+       /home/recruit/umuzi.md
+
+
+Task 5 : The locate command
+
+    1.recruit@admin1-ThinkCentre-M72e:~/Documents$ touch pad.md
+    2. recruit@admin1-ThinkCentre-M72e:~/Desktop$ mkdir work
+    3. recruit@admin1-ThinkCentre-M72e:~/Documents$ cp pad.md ~/Desktop/work/pad_copy.md
+    4. recruit@admin1-ThinkCentre-M72e:~$ locate updatedb
+    5. recruit@admin1-ThinkCentre-M72e:~/Desktop$ cd -
+       /home/recruit
+    6. recruit@admin1-ThinkCentre-M72e:~$ locate pad_copy.md
+
+
+Task 6 : Find commands (Answears)
+
+    1. recruit@admin1-ThinkCentre-M72e:~$ locate *.pdf
+    2. recruit@admin1-ThinkCentre-M72e:~$ locate *.pdf ~/Documents
+    3. recruit@admin1-ThinkCentre-M72e:~$ find -daystart -ctime 0 -print
+
+Task 7 : Text Editor
+
+    1. recruit@admin1-ThinkCentre-M72e:~$ nano touch my_boi.md
+    2. ctrl x
+    3. recruit@admin1-ThinkCentre-M72e:~$ mkdir createdFile
+        recruit@admin1-ThinkCentre-M72e:~$ mv my_bio.md ~/createdFile
+
+
